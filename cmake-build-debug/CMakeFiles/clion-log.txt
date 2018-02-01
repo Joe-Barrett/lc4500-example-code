@@ -1,0 +1,4 @@
+C:\cygwin64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug

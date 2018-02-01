@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/lc4500_driver.dir/app.cpp.o CMakeFiles/lc4500_driver.dir/tcp_client.cpp.o CMakeFiles/lc4500_driver.dir/packager.cpp.o CMakeFiles/lc4500_driver.dir/commands.cpp.o CMakeFiles/lc4500_driver.dir/init.cpp.o  -o lc4500_driver.exe -Wl,--out-implib,liblc4500_driver.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
