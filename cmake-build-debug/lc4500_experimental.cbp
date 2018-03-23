@@ -8,109 +8,111 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug"/>
+				<Option working_dir="D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lc4500_driver">
-				<Option output="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/lc4500_driver.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug"/>
+				<Option output="D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/lc4500_driver.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc4500_driver"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc4500_driver"/>
+					<CompileFile command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lc4500_driver/fast">
-				<Option output="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/lc4500_driver.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug"/>
+				<Option output="D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/lc4500_driver.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc4500_driver/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc4500_driver/fast"/>
+					<CompileFile command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw/bin/mingw32-make.exe -f &quot;D:/projects/MOONS/lightcrafter/lc4500_experimental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/app.cpp">
+		<Unit filename="D:/projects/MOONS/lightcrafter/lc4500_experimental/app.cpp">
 			<Option target="lc4500_driver"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/commands.cpp">
+		<Unit filename="D:/projects/MOONS/lightcrafter/lc4500_experimental/commands.cpp">
 			<Option target="lc4500_driver"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/commands.h">
+		<Unit filename="D:/projects/MOONS/lightcrafter/lc4500_experimental/commands.h">
 			<Option target="lc4500_driver"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/common.h">
+		<Unit filename="D:/projects/MOONS/lightcrafter/lc4500_experimental/common.h">
 			<Option target="lc4500_driver"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/error.h">
+		<Unit filename="D:/projects/MOONS/lightcrafter/lc4500_experimental/error.h">
 			<Option target="lc4500_driver"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/init.cpp">
+		<Unit filename="D:/projects/MOONS/lightcrafter/lc4500_experimental/init.cpp">
 			<Option target="lc4500_driver"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/packager.cpp">
+		<Unit filename="D:/projects/MOONS/lightcrafter/lc4500_experimental/packager.cpp">
 			<Option target="lc4500_driver"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/packager.h">
+		<Unit filename="D:/projects/MOONS/lightcrafter/lc4500_experimental/packager.h">
 			<Option target="lc4500_driver"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/tcp_client.cpp">
+		<Unit filename="D:/projects/MOONS/lightcrafter/lc4500_experimental/tcp_client.cpp">
 			<Option target="lc4500_driver"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/tcp_client.h">
+		<Unit filename="D:/projects/MOONS/lightcrafter/lc4500_experimental/tcp_client.h">
 			<Option target="lc4500_driver"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/projects/MOONS/MoonsLibrary/trunk/lc4500_experimental/CMakeLists.txt">
+		<Unit filename="D:/projects/MOONS/lightcrafter/lc4500_experimental/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

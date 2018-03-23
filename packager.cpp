@@ -3,7 +3,7 @@
 #include "packager.h"
 
 #pragma clang diagnostic push
-#pragma ide diagnostic ignored "ClangTidyInspection"
+//#pragma ide diagnostic ignored "ClangTidyInspection"
 static uint8 packetBuffer[HEADER_SIZE + MAX_PACKET_SIZE + CHECKSUM_SIZE];
 static uint8 *const packetData = packetBuffer + HEADER_SIZE;
 static Packager::PEM_PacketType_t PEM_PacketType;
@@ -309,25 +309,6 @@ int Packager::PEM_CMD_PKT_ReceivePacket(BOOL firstPkt)
         return -1;
     }
 
-    /*PRINT SECTION*/
-    /*printf("                 Type\tCMD1\tCMD2\tFlags\tLN1\tLN2\t");
-    if (dataLength > 0)
-    {
-        printf("Data");
-    }
-    for (int k = 0; k < dataLength; ++k)
-    {
-        printf("\t");
-    }
-    printf("Checksum\n");
-    printf("RECEIVED PACKET: ");
-    for (int j = 0; j < HEADER_SIZE + dataLength + 1; ++j)
-    {
-        printf("%d\t", packetBuffer[j]);
-    }
-    printf("\n");*/
-    /*FINSIH PRINT SECTION*/
-
     if (packetData[dataLength] != PEM_CMD_PKT_CalcChecksum())
     {
         printf("ERROR: Checksum failed in the command's response packet\n");
@@ -509,4 +490,4 @@ int Packager::PEM_CMD_PKT_SendCommand(void)
     return PEM_CMD_PKT_SendPacket(0);
 }
 
-#pragma clang diagnostic pop
+//#pragma clang diagnostic pop

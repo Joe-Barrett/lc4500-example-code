@@ -8,21 +8,18 @@
 
 #include "tcp_client.h"
 
-TcpClient::TcpClient()
-{
+TcpClient::TcpClient() {
 }
 
-int TcpClient::TCP_Connect(char *host, unsigned long int port)
-{
+int TcpClient::TCP_Connect(char *host, unsigned long int port) {
     struct sockaddr_in server;
-    struct hostent *host_ptr;
-    int sock;
-    int result;
+    struct hostent     *host_ptr;
+    int                sock;
+    int                result;
 
     host_ptr = gethostbyname(host);
 
-    if (!host_ptr)
-    {
+    if (!host_ptr) {
         fprintf(stderr, "Invalid host name\n");
         return -1;
     }
@@ -30,25 +27,21 @@ int TcpClient::TCP_Connect(char *host, unsigned long int port)
     sock = socket(AF_INET, SOCK_STREAM, 0);
     memcpy((char *) &server.sin_addr, host_ptr->h_addr_list[0], (size_t) host_ptr->h_length);
     server.sin_family = AF_INET;
-    server.sin_port = htons((short) port);
+    server.sin_port   = htons((short) port);
 
     result = connect(sock, (struct sockaddr *) &server, sizeof(server));
-    if (result < 0)
-    {
+    if (result < 0) {
         fprintf(stderr, "Unable to connect %d\n", result);
         return -1;
     }
     return sock;
 }
 
-int TcpClient::TCP_Send(int sock, unsigned char *buffer, int length)
-{
+int TcpClient::TCP_Send(int sock, unsigned char *buffer, int length) {
     int sent = 0;
-    while (sent < length)
-    {
+    while (sent < length) {
         int result = (int) send(sock, buffer + sent, (size_t) (length - sent), 0);
-        if (result <= 0)
-        {
+        if (result <= 0) {
             return -1;
         }
         sent += result;
@@ -56,19 +49,14 @@ int TcpClient::TCP_Send(int sock, unsigned char *buffer, int length)
     return 0;
 }
 
-int TcpClient::TCP_Receive(int sock, unsigned char *buffer, int length)
-{
+int TcpClient::TCP_Receive(int sock, unsigned char *buffer, int length) {
     int received = 0;
-    while (received < length)
-    {
+    while (received < length) {
         int result = (int) recv(sock, buffer + received, (size_t) (length - received), 0);
-        if (result == 0)
-        {
+        if (result == 0) {
             printf("TCP_Receive: Client has disconnected\n");
             return -1;
-        }
-        else if (result < 0)
-        {
+        } else if (result < 0) {
             printf("TCP_Receive: Error in receive\n");
             int err = errno;
             printf("ERROR #: %d\n", err);
@@ -79,8 +67,7 @@ int TcpClient::TCP_Receive(int sock, unsigned char *buffer, int length)
     return 0;
 }
 
-int TcpClient::TCP_Disconnect(int socket)
-{
+int TcpClient::TCP_Disconnect(int socket) {
     close(socket);
     return 0;
 }

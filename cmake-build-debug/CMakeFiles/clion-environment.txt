@@ -1,3 +1,4 @@
-ToolSet: 2.8.0@C:\cygwin64
+ToolSet: 5.0@D:\mingw
 Options: 
-CMake: 3.6.2@C:\cygwin64\bin\cmake.exe
+
+Options:
